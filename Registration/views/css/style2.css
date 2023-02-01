@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'montserat';
+    src: url(..views/fonts/Montserrat-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 7.5px;
+    font-family: 'montserat';
+    background: rgb(245, 245, 245);
+}
+
+nav .navigation{
+    margin-top: -5px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    box-shadow: 5px 2px 5px rgb(208, 208, 208);
+}
+/*----------------------------------Navigation-Bar*----------------------------------/
+/*-------------Left--------------*/
+.nav-left{
+    width: 25%;
+}
+
+.nav-left h1{
+    font-size: 30px;
+    color:rgb(65, 65, 65);
+    margin-left: 7.5%;
+}
+
+.nav-left h1 span{
+    color: #14d290;
+}
+
+/*-------------middle-----------*/
+.nav-middle{
+    text-align: center;
+    width: 50%;
+}
+
+.search-bar{
+    border-radius: 5px;
+    margin: 0% 32% 0 32.5%;
+    border: 1.5px solid rgb(230, 230, 230);
+    background: rgb(255, 255, 255);
+    transition: 75ms;
+}
+
+.search-bar:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 2px 5px rgb(208, 208, 208);
+    border: 1.5px solid rgb(208, 208, 208);
+    transition: 75ms;
+}
+
+.fa-search{
+    color: rgb(65, 65, 65);
+    margin: 0px 5% 0px 0%;
+}
+
+.recherche{
+    border: none;
+    padding: 7.5px;
+    color: rgb(55, 55, 55);
+    background:rgb(255, 255, 255);
+}
+
+.recherche:focus{
+    outline: none;
+}
+
+.recherche::placeholder{
+    color: rgb(65, 65, 65);
+}
+
+/*---------rigth-------------*/
+.nav-rigth{
+    width: 25%;
+}
+
+.nav-rigth-component{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.post-logo{
+    width: 10%;  
+}
+
+.post-logo a{
+    color: rgb(55, 55, 55);
+}
+
+.cog-logo{
+    width: 15%;
+}
+
+.cog-logo a{
+    color: rgb(55, 55, 55);
+}
+
+.name-profile{
+    width: 20%;
+    color: rgb(35, 35, 35);
+    cursor: pointer;
+}
+
+.picture-profile{
+    width: 17.5%;
+}
+
+.picture-profile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.picture-profile img:hover{
+    transition: 0.15s;
+    transform: scale(1.2);
+}
+
+.logout-logo{
+    width: 15%;
+    margin-left: 20%;
+}
+
+.logout-logo a{
+    color: rgb(55, 55, 55);
+}
+
+.profile-img{
+    width: 45px;
+    height: 45px;
+    margin: 0 0.5% 0 0.5%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+/*----------------------------------main*----------------------------------*/
+.card{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+.card-left{
+    width: 30%;
+}
+
+.card-rigth{
+    width: 30%;
+}
+
+.card-connexion{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 2px 5px rgb(208, 208, 208);
+}
+
+.card-connexion h4{
+    padding: 12.5px 0% 5px 0%;
+}
+
+.liste-friend-connexion{
+    padding: 5px 0% 10px 0%;
+}
+
+.card-body{
+    padding: 15px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 2px 5px rgb(208, 208, 208);
+}
+
+.card-top{
+    position: relative;
+    align-items: center;
+    display: flex;
+    padding: 10px 0% 15px 0%;
+    width: 100%;
+}
+
+.card-top .name-user{
+    margin-left: 1%;
+    font-size: 20px;
+}
+
+.card-top .date-heure{
+    width: 75%;
+}
+
+.card-top .option-post{
+    position: absolute;
+    left: 97%;
+}
+
+.card-top .fa{
+    font-size: 30px;
+    cursor: pointer;
+    color: #18ae7a;
+}
+
+.card-content img{
+    border-radius: 5px;
+    margin: 0% 25px 0% 25px;
+    box-shadow: 5px 2px 5px rgb(208, 208, 208);
+}
+
+.card-content .phrase{
+    padding: 10px 0% 15px 0%;
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+}
+
+.card-bottom .fa{
+    border: 1px solid #14d290;
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #14d290;
+}

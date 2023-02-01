@@ -1,0 +1,53 @@
+1 ===  Manamboatra ny Squelette anle site web
+    cad Manao anle nav bar sy ny tariny (le zavatra staitique reny dôly) , d atao le template
+
+2 === Atao sous-forme le fomba isehoanle Donnéé ohatra we amle tableau , tsy Donnéé fa zavatra mbola nosoratana mintsy
+
+3 === Affichage de Donnéé de Manière Statique , 
+    Iazny we instacena anatynle page le Donnéé(boky izy eto) hampisaina
+
+4 === Affichge de Donnéé de Manière Dynamique
+    Izany hoe Mampiasa Base de DOnnée aminzay , voilà la suite aux prochain numéro ;)
+
+NB ; 
+    views === les affichage comme html
+model === Les classe qui permet d'afficher les Donnéé dans la BD
+controllers === il controle la cohérence des DOnnée
+    
+    Le fichier .htaccess permet de au lieu de ça
+        http://localhost/Udemy/index.php?page=accueil
+
+    Il affiche le lien comme ça 
+        http://localhost/Udemy/acceuil
+
+    
+
+
+MVC 
+
+Models  = tous les classe qu'on a créer
+Views = les Affichge de Donnéé (98% html css)
+controllers = assure la cohérence des DOnnée (mba tsy hifangaro ny  views sy ny models izany hoe tsy tokony hisy code instaciation any @ views moins de code php )
+
+Tsy mahazo mampiasa triple egale rehefa anaty boucle anaty class utilise plutôt == na =  
+
+Ampiasaina le URL le natao t@ htaccess iny bah manomboka @ depart fona le izy à chaque clique mba tsy hampitambtra lien na hamoka lien samy hafa
+
+                        <a class="nav-link active" href=" <?= URL ?>accueil">Accueil
+permet de revenir toujours au point de depart anle lien
+
+Enctype permet de recuperer l'informantion d'un image de manier correcte
+ary amin'ny upload ana image le izy no tena ilaina 
+ao  @ ajoutLivre.php zao misy anazy ery akaikiny method sy Post
+
+
+Remarque :  (EX=  VARIABLE KEY IS UNDIFINED)
+rehefa manao upload ana image de la anarany name ary  @ input aza atao we image fa cherhce autre chose ohatra we idao karim et tout le reste
+
+        //Bindvalue est une fonction permettant de securiser les donnée d'ajout (il fait partie de la PDO enfin je crois);
+
+
+                        <!-- demande de confirmation simple en js  -->
+                <form action="<?= URL ?>livre/s/<?= $livres[$i]->getId();; ?>" method="post" onSubmit="return confirm('Are you Sure About ?')">
+                    <button class="btn btn-danger" type="submit">Supprimer</button>
+                </form>

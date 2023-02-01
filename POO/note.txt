@@ -1,0 +1,12 @@
+public => tout le monde peutvent avoir acces
+private => zay ao anaty class mere iany no mahazo mampiasa azy
+protected => @ heritage, les enfant seule peuvent le modifier ou bien l'utiliser
+
+Pour utiliser une fonction  de maman dans enfant 
+parent::nom_du_fonction(parametre);
+
+
+le autoloader tsy mety mandeha;
+
+
+
